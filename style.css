@@ -1,15 +1,22 @@
 * {
 	box-sizing: border-box;
   }
-  
+  #logo {
+	width: 115px;
+	height: auto;
+	position: absolute;
+	left: 0;
+	margin-top: -20px;
+  }
   #myInput {
 	background-image: url('/css/searchicon.png');
 	background-position: 10px 12px;
 	background-repeat: no-repeat;
+	background-color: #EEEEEE;
 	width: 100%;
 	font-size: 16px;
 	padding: 12px 20px 12px 40px;
-	border: 1px solid #ddd;
+	border: .8px solid #222831;
 	margin-bottom: 12px;
   }
   
@@ -43,12 +50,11 @@ body {
 #container {
 	position: relative;
 }
-img {
-	width: 130px;
+.genreButton img {
+	width: 100px;
 	height: auto;
 	margin: 8px 15px 8px 10px;
 	border-radius: 5%;
-
 }
 #posterImage img {
 	width: 285px;
@@ -63,14 +69,10 @@ img {
 	width: 450px;
 	line-height: 2;
 }
-img:hover {
-	box-shadow: 1px 1px 15px 2px rgba(255,255,255,0.79);
-	-webkit-box-shadow: 1px 1px 15px 2px rgba(255,255,255,0.79);
-	-moz-box-shadow: 1px 1px 15px 2px rgba(255,255,255,0.79);
-}
-
 .genreButton img:hover {
-	filter: drop-shadow(0 0 0 0.75rem white);
+	box-shadow: 1px 1px 15px 2px rgb(34, 40, 49, 0.79);
+	-webkit-box-shadow: 1px 1px 15px 2px rgb(34, 40, 49, 0.79);
+	-moz-box-shadow: 1px 1px 15px 2px rgb(34, 40, 49, 0.79);
 }
 .genreButton img {
 	filter: grayscale(100%);
@@ -131,5 +133,6 @@ body.dark {
 
 #footerDiv {
 	position: fixed;
+	display: block;
 	bottom: 0;
 }
