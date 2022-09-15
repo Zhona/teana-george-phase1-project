@@ -26,6 +26,7 @@ fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=cbb53a38daad4a3872
 
 //makes the movie images load 
 function renderMovies(movie) {
+    let div = document.createElement("div")
     let panel = document.querySelector(".genreButton")
     let image = document.createElement("img")
     image.src = `https://image.tmdb.org/t/p/w185/${movie.poster_path}`

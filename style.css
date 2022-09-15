@@ -87,12 +87,15 @@ img:hover {
 	transform: scale(1);
 }
 
-.fa-moon {
-	color: #f1c40f;
-}
-
 .fa-sun {
 	color: #f39c12;
+	margin-left: 6px;
+	margin-top: 5px;
+}
+.fa-moon {
+	color: #f1c40f;
+	margin-left: 8px;
+	margin-top: 5px;
 }
 
 .ball{
