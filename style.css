@@ -1,13 +1,17 @@
 * {
 	box-sizing: border-box;
   }
-  #logo {
+  .logo {
 	width: 115px;
 	height: auto;
 	position: absolute;
 	left: 0;
 	margin-top: -20px;
   }
+  #darkLogo {
+	display: none;
+  }
+
   #myInput {
 	background-image: url('/css/searchicon.png');
 	background-position: 10px 12px;
