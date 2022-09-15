@@ -1,4 +1,4 @@
-//this will fetch the data and load it up
+//this will fetch the data and load it up, top rated movies 
 let movies = [];
 fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=cbb53a38daad4a38723daab094adb724')
 .then ((res) => res.json())
@@ -12,7 +12,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=cbb53a38daad4a38723d
 });
 
 
-// second page of json data 
+// second page of json data, newlt released movies 
 fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=cbb53a38daad4a38723daab094adb724')
 .then ((res) => res.json())
 .then((movie) =>  {
