@@ -64,9 +64,9 @@ let voteAverage = document.querySelector("#vote_average")
 voteAverage.innerText = `IMDb Rating: ${movie.vote_average}`
 let description = document.querySelector("#overview")
 description.innerText = movie.overview
-console.log(movie.title)
-let image = document.querySelector("#movieImage")
-image.src = image.src = `https://image.tmdb.org/t/p/w185/${movie.poster_path}`
+// console.log(movie.title)
+// let image = document.querySelector("#movieImage")
+// image.src = image.src = `https://image.tmdb.org/t/p/w185/${movie.poster_path}`
 }
 
 //button that toggle night and light mode 

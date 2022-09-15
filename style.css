@@ -79,23 +79,19 @@ body.dark #lightLogo {
 	margin-bottom: 12px;
 }
 /*************  Image/ Image container  **************/
-#posterImage img {
-	width: 250px;
-	border-radius: 4%;
-}
-#posterImage{
-	position: absolute;
-	right: 200px;
-	margin-top: 50px;
+#video{
+	margin-left: 25px;
+    position: absolute;
+    margin-top: 18px;
 }
 /*************  Information container  **************/
 #movieInfo {
 	position: absolute;
-	left: 200px;
-	width: 400px;
-	line-height: 2;
-	text-align: center;
-	margin-top: 20px;
+    width: 400px;
+    margin-right: 25px;
+    line-height: 2;
+    right: 0;
+    text-align: center;
 }
 /*************  Nav bar/ nav images  **************/
 .genreButton img {
