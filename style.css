@@ -109,6 +109,7 @@ body.dark #lightLogo {
 	box-shadow: 1px 1px 15px 2px rgb(34, 40, 49, 0.79);
 	-webkit-box-shadow: 1px 1px 15px 2px rgb(34, 40, 49, 0.79);
 	-moz-box-shadow: 1px 1px 15px 2px rgb(34, 40, 49, 0.79);
+	transform: scale(1.1);
 }
 .genreButton img {
 	filter: grayscale(100%);
