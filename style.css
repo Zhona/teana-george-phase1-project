@@ -6,8 +6,6 @@
     text-align: center;
 	color: #222831;
 	font-family: 'Josefin Sans', sans-serif;
-	height: 100vh;
-	cursor: url('./film-solid.svg'), crosshair;
 }
 #container {
 	position: relative;
@@ -40,6 +38,7 @@ body.dark #lightLogo {
 	top: 5px;
 	right: 5px;
 	transform: scale(1);
+	margin-right: 24px;
 }
 .fa-sun {
 	color: #f39c12;
@@ -73,7 +72,7 @@ body.dark #lightLogo {
 	background-position: 10px 12px;
 	background-repeat: no-repeat;
 	background-color: #EEEEEE;
-	width: 100%;
+	width: 96%;
 	font-size: 16px;
 	padding: 12px 20px 12px 40px;
 	border: .8px solid #222831;
@@ -119,7 +118,8 @@ body.dark #lightLogo {
 	display: flex;
 	position:fixed;
 	bottom: 20px;
-	width: 100%;
+	width: 95.7%;
+	margin-left: 20px;
 }
 /*************  Switches the page to match the light and dark mode button  **************/
 body.dark {
