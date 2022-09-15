@@ -84,7 +84,7 @@ console.log(searchBar)
 // EVENT LISTENER EXTRA 
 searchBar.addEventListener('input', (e) => {
     console.log('search', e.target.value)
-
+//prints out everything we type into the search bar
     movieList.innerHTML = ''
 // loops through each movie and filters 
     movies.forEach(movie => {
