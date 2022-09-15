@@ -81,18 +81,22 @@ body.dark #lightLogo {
 }
 /*************  Image/ Image container  **************/
 #posterImage img {
-	width: 285px;
+	width: 250px;
+	border-radius: 4%;
 }
 #posterImage{
 	position: absolute;
 	right: 200px;
+	margin-top: 50px;
 }
 /*************  Information container  **************/
 #movieInfo {
 	position: absolute;
 	left: 200px;
-	width: 450px;
+	width: 400px;
 	line-height: 2;
+	text-align: center;
+	margin-top: 20px;
 }
 /*************  Nav bar/ nav images  **************/
 .genreButton img {

@@ -59,9 +59,9 @@ movieTitle.textContent = movie.title
 let language = document.querySelector("#language")
 language.innerText =`Original Language: ${movie.original_language}`
 let releaseDate = document.querySelector("#release_date")
-releaseDate.innerText =  movie.release_date
+releaseDate.innerText = `Release Date: ${movie.release_date}` 
 let voteAverage = document.querySelector("#vote_average")
-voteAverage.innerText = movie.vote_average
+voteAverage.innerText = `IMDb Rating: ${movie.vote_average}`
 let description = document.querySelector("#overview")
 description.innerText = movie.overview
 console.log(movie.title)
