@@ -1,86 +1,35 @@
 * {
 	box-sizing: border-box;
   }
-  .logo {
+  body {
+    background-color: #EEEEEE;
+    text-align: center;
+	color: #222831;
+	font-family: 'Josefin Sans', sans-serif;
+	height: 100vh;
+	cursor: url('./film-solid.svg'), crosshair;
+}
+#container {
+	position: relative;
+}
+/*************  Logo and changes to dark and light logos  **************/
+.logo {
 	width: 115px;
 	height: auto;
 	position: absolute;
 	left: 0;
 	margin-top: -20px;
   }
-  #darkLogo {
+#darkLogo {
 	display: none;
   }
-
-  #myInput {
-	background-image: url('/css/searchicon.png');
-	background-position: 10px 12px;
-	background-repeat: no-repeat;
-	background-color: #EEEEEE;
-	width: 100%;
-	font-size: 16px;
-	padding: 12px 20px 12px 40px;
-	border: .8px solid #222831;
-	margin-bottom: 12px;
-  }
-  
-  #myUL {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-  }
-  
-  #myUL li a {
-	border: 1px solid #ddd;
-	margin-top: -1px; /* Prevent double borders */
-	background-color: #f6f6f6;
-	padding: 12px;
-	text-decoration: none;
-	font-size: 18px;
-	color: black;
-	display: block
-  }
-  
-  #myUL li a:hover:not(.header) {
-	background-color: #eee;
-  }
-
-body {
-    background-color: #EEEEEE;
-    text-align: center;
-	color: #222831;
-	font-family: 'Josefin Sans', sans-serif;
+body.dark #darkLogo {
+	display: inline;
 }
-#container {
-	position: relative;
+body.dark #lightLogo {
+	display: none;
 }
-.genreButton img {
-	width: 100px;
-	height: auto;
-	margin: 8px 15px 8px 10px;
-	border-radius: 5%;
-}
-#posterImage img {
-	width: 285px;
-}
-#posterImage{
-	position: absolute;
-	right: 200px;
-}
-#movieInfo {
-	position: absolute;
-	left: 200px;
-	width: 450px;
-	line-height: 2;
-}
-.genreButton img:hover {
-	box-shadow: 1px 1px 15px 2px rgb(34, 40, 49, 0.79);
-	-webkit-box-shadow: 1px 1px 15px 2px rgb(34, 40, 49, 0.79);
-	-moz-box-shadow: 1px 1px 15px 2px rgb(34, 40, 49, 0.79);
-}
-.genreButton img {
-	filter: grayscale(100%);
-}
+/*************  Button to change light and dark mode  **************/
 .label {
 	background-color: rgb(69, 69, 69);
 	display: flex;
@@ -116,19 +65,49 @@ body {
 	opacity: 0;
 	position: absolute;
 }
-
 .checkbox:checked + .label .ball {
 	transform: translateX(24px);
 }
-body.dark {
-	background-color: #222831;
-	color: #EEEEEE;
+/*************  SearchBar  **************/
+#myInput {
+	background-position: 10px 12px;
+	background-repeat: no-repeat;
+	background-color: #EEEEEE;
+	width: 100%;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: .8px solid #222831;
+	margin-bottom: 12px;
 }
-body.dark #darkLogo {
-	display: inline;
+/*************  Image/ Image container  **************/
+#posterImage img {
+	width: 285px;
 }
-body.dark #lightLogo {
-	display: none;
+#posterImage{
+	position: absolute;
+	right: 200px;
+}
+/*************  Information container  **************/
+#movieInfo {
+	position: absolute;
+	left: 200px;
+	width: 450px;
+	line-height: 2;
+}
+/*************  Nav bar/ nav images  **************/
+.genreButton img {
+	width: 100px;
+	height: auto;
+	margin: 8px 15px 8px 10px;
+	border-radius: 5%;
+}
+.genreButton img:hover {
+	box-shadow: 1px 1px 15px 2px rgb(34, 40, 49, 0.79);
+	-webkit-box-shadow: 1px 1px 15px 2px rgb(34, 40, 49, 0.79);
+	-moz-box-shadow: 1px 1px 15px 2px rgb(34, 40, 49, 0.79);
+}
+.genreButton img {
+	filter: grayscale(100%);
 }
 #container nav {
 	overflow-y: auto;
@@ -137,6 +116,17 @@ body.dark #lightLogo {
 	bottom: 20px;
 	width: 100%;
 }
+/*************  Switches the page to match the light and dark mode button  **************/
+body.dark {
+	background-color: #222831;
+	color: #EEEEEE;
+}
+body.dark .genreButton img:hover {
+	box-shadow: 1px 1px 15px 2px rgb(238, 238, 238, 0.79);
+	-webkit-box-shadow: 1px 1px 15px 2px rgb(238, 238, 238, 0.79);
+	-moz-box-shadow: 1px 1px 15px 2px rgb(238, 238, 238, 0.79);
+}
+/*************  Footer **************/
 #footerDiv {
 	position: fixed;
 	display: block;

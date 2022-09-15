@@ -12,45 +12,48 @@
     <script src="https://kit.fontawesome.com/9d2f303167.js" crossorigin="anonymous"></script>
     <script defer src="index.js"></script>
     <title>T&G Studio</title>
-
-   
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div id="container">
+  <div id="container">
+    
+    <!-- Logo and header -->
     <img class="logo" id="lightLogo" src="logo.svg" alt="">
     <img class="logo" id="darkLogo"src="logoDark.svg" alt="">
     <h1>T&G Studio</h1>
-    <div>
-    <!-- Toggle dark mode/ light mode -->
-<div>
+
+    <!-- Dark and Light mode -->
     <input type = "checkbox" class = "checkbox" id = "checkbox">
     <label for ="checkbox" class = "label">
-    <i class = "fas fa-sun"></i>   
-    <i class = "fas fa-moon"></i>
-    <div class ="ball"></div>
+      <i class = "fas fa-sun"></i>   
+      <i class = "fas fa-moon"></i>
+      <div class ="ball"></div>
     </label>
-</div>
-    
+
+    <!-- Search bar -->
+    <input type="text" id="myInput"  placeholder="Search for movie title..">
+
+    <!-- Poster Image  -->
+    <div id = "posterImage">
+      <img id = "movieImage">
+    </div>
+
+    <!-- Movie summary -->
+    <div id="movieInfo">
+      <h3 id="title"></h3>
+      <p id="vote_average"></p>
+      <p id="release_date"></p>
+      <p id = "language"></p>
+      <p id="overview"></p>   
+    </div>
+
+    <!-- Nav loaded with images using DOM -->
     <nav class="genreButton"> 
     </nav>
-    
-    <div id = "posterImage">
-        <img id = "movieImage">
-    </div>
-    <div id="movieInfo">
-        <h3 id="title"></h3>
-        <p id="vote_average"></p>
-        <p id="release_date"></p>
-        <p id = "language"></p>
-        <p id="overview"></p>   
-    </div>
+
     <div id="footerDiv">
         <footer>&reg; Teana & George</footer>
     </div>
-
-     <!-- T -->
-    <input type="text" id="myInput"  placeholder="Search for movie title..">
-<h1></h1>
-</div>
-
+  </div>
+</body>
+</html>
