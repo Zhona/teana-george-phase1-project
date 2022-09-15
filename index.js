@@ -1,7 +1,7 @@
 //this will fetch the data and load it up
 let movies = [];
 fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=cbb53a38daad4a38723daab094adb724')
-.then ((res) => res.json())
+.then((res) => res.json())
 .then((movie) =>  {
     console.log(movie.results, "fetched form database");
     for(let i = 0; i < movie.results.length; i++){
@@ -14,7 +14,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=cbb53a38daad4a38723d
 
 // second page of json data 
 fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=cbb53a38daad4a38723daab094adb724')
-.then ((res) => res.json())
+.then((res) => res.json())
 .then((movie) =>  {
     console.log(movie.results, "fetched form database");
     for(let i = 0; i < movie.results.length; i++){
@@ -23,6 +23,20 @@ fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=cbb53a38daad4a3872
     }
 
 });
+
+fetch('http://localhost:3000/video')
+.then((res) => res.json())
+.then((video) => {
+    video.forEach (video => {
+        console.log('Loaded Movies')
+        loadVideos(video)
+    })
+});
+
+function loadVideos (video) {
+}
+
+
 
 //makes the movie images load 
 function renderMovies(movie) {
@@ -33,7 +47,6 @@ function renderMovies(movie) {
     panel.append(image)
 
 image.addEventListener("click", () => {
-    console.log("clicked movie")
     renderDetails(movie)
     //refresh the search bar after we click the image
     searchBar.value = ''
@@ -81,7 +94,6 @@ const searchBar = document.querySelector('#myInput')
 const movieList = document.querySelector('.genreButton')
 console.log(searchBar)
 searchBar.addEventListener('input', (e) => {
-    console.log('search', e.target.value)
     movieList.innerHTML = ''
     movies.forEach(movie => {
         if (movie.title.toLowerCase().includes(e.target.value.toLowerCase()) ) {
