@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300&display=swap" rel="stylesheet">
+    <script defer src="index.js"></script>
+    <title>My movie list</title>
+
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+<div id="container">
+    <h1>Popular Movies</h1>
+    <div>
+    <!-- Toggle dark mode/ light mode -->
+<div>
+    <input type = "checkbox" class = "checkbox" id = "checkbox">
+    <label for ="checkbox" class = "label">
+    <i class = "fas fa-moon"></i>
+    <i class = "fas fa-sun"></i>   
+    <div class ="ball"></div>
+    </label>
+</div>
+    
+    <nav class="genreButton"> 
+    </nav>
+    
+    <div id = "posterImage">
+        <img id = "movieImage">
+    </div>
+    <div id="movieInfo">
+        <h3 id="title"></h3>
+        <p id="vote_average"></p>
+        <p id="release_date"></p>
+        <p id = "language"></p>
+        <p id="overview"></p>   
+    </div>
+    <div id="footerDiv">
+        <footer>&reg; Teana & George</footer>
+    </div>
+
+     <!-- T -->
+    <input type="text" id="myInput"  placeholder="Search for movie title..">
+<h1></h1>
+</div>
+
