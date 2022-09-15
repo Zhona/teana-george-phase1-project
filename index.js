@@ -26,6 +26,7 @@ fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=cbb53a38daad4a3872
 
 //makes the movie images load 
 function renderMovies(movie) {
+    let div = document.createElement("div")
     let panel = document.querySelector(".genreButton")
     let image = document.createElement("img")
     image.src = `https://image.tmdb.org/t/p/w185/${movie.poster_path}`
@@ -58,9 +59,9 @@ movieTitle.textContent = movie.title
 let language = document.querySelector("#language")
 language.innerText =`Original Language: ${movie.original_language}`
 let releaseDate = document.querySelector("#release_date")
-releaseDate.innerText =  movie.release_date
+releaseDate.innerText = `Release Date: ${movie.release_date}` 
 let voteAverage = document.querySelector("#vote_average")
-voteAverage.innerText = movie.vote_average
+voteAverage.innerText = `IMDb Rating: ${movie.vote_average}`
 let description = document.querySelector("#overview")
 description.innerText = movie.overview
 console.log(movie.title)
