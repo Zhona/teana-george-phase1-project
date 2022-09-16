@@ -137,3 +137,47 @@ body.dark .genreButton img:hover {
 	display: block;
 	bottom: 0;
 }
+
+/************* Media Query ***********/
+
+@media only screen and (max-width: 400px) {
+	html {
+		width: 100%;
+	}
+	#myInput {
+		width: 100%;
+	}
+	#posterImage img {
+		width: 150px;
+		border-radius: 4%;
+	}
+	#posterImage{
+		margin: 0;
+		position: inherit;
+		display: none;
+	}
+	#movieInfo {
+		width: 100%;
+		line-height: 1.8;
+		text-align: center;
+		position: initial;
+		margin-top: 60px;
+	}
+	.genreButton img {
+		width: auto;
+		height: 100px;
+		margin: 8px 15px 8px 10px;
+		border-radius: 5%;
+	}
+	#container nav {
+		overflow-y: auto;
+		display: flex;
+		position:fixed;
+		bottom: 0;
+		width: 95.7%;
+		margin-left: 0;
+	}
+	#footerDiv {
+		display: none;
+	}
+  }
