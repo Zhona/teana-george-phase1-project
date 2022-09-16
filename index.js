@@ -91,4 +91,3 @@ searchBar.addEventListener('input', (e) => {
     })
     
 })
-

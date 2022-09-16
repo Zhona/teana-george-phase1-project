@@ -6,8 +6,6 @@
     text-align: center;
 	color: #222831;
 	font-family: 'Josefin Sans', sans-serif;
-	height: 100vh;
-	cursor: url('./film-solid.svg'), crosshair;
 }
 #container {
 	position: relative;
@@ -40,6 +38,7 @@ body.dark #lightLogo {
 	top: 5px;
 	right: 5px;
 	transform: scale(1);
+	margin-right: 24px;
 }
 .fa-sun {
 	color: #f39c12;
@@ -73,7 +72,7 @@ body.dark #lightLogo {
 	background-position: 10px 12px;
 	background-repeat: no-repeat;
 	background-color: #EEEEEE;
-	width: 100%;
+	width: 96%;
 	font-size: 16px;
 	padding: 12px 20px 12px 40px;
 	border: .8px solid #222831;
@@ -109,6 +108,7 @@ body.dark #lightLogo {
 	box-shadow: 1px 1px 15px 2px rgb(34, 40, 49, 0.79);
 	-webkit-box-shadow: 1px 1px 15px 2px rgb(34, 40, 49, 0.79);
 	-moz-box-shadow: 1px 1px 15px 2px rgb(34, 40, 49, 0.79);
+	transform: scale(1.1);
 }
 .genreButton img {
 	filter: grayscale(100%);
@@ -118,7 +118,8 @@ body.dark #lightLogo {
 	display: flex;
 	position:fixed;
 	bottom: 20px;
-	width: 100%;
+	width: 95.7%;
+	margin-left: 20px;
 }
 /*************  Switches the page to match the light and dark mode button  **************/
 body.dark {
@@ -136,3 +137,47 @@ body.dark .genreButton img:hover {
 	display: block;
 	bottom: 0;
 }
+
+/************* Media Query ***********/
+
+@media only screen and (max-width: 500px) {
+	html {
+		width: 100%;
+	}
+	#myInput {
+		width: 100%;
+	}
+	#posterImage img {
+		width: 150px;
+		border-radius: 4%;
+	}
+	#posterImage{
+		margin: 0;
+		position: inherit;
+		display: none;
+	}
+	#movieInfo {
+		width: 100%;
+		line-height: 1.8;
+		text-align: center;
+		position: initial;
+		margin-top: 60px;
+	}
+	.genreButton img {
+		width: auto;
+		height: 100px;
+		margin: 8px 15px 8px 10px;
+		border-radius: 5%;
+	}
+	#container nav {
+		overflow-y: auto;
+		display: flex;
+		position:fixed;
+		bottom: 0;
+		width: 95.7%;
+		margin-left: 0;
+	}
+	#footerDiv {
+		display: none;
+	}
+  }
